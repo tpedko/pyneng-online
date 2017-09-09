@@ -1,7 +1,13 @@
-'''
+# My Repo for pyneng-online
+
+Git HowTo
+
+```
 git clone ssh://git@github.com/tpedko/pyneng-online.git
 
 git pull
+git merge origin/master ??
+
 git add . 
 
 or  
@@ -9,4 +15,5 @@ or
 git rm <file>
 git commit -m "note"
 git push origin master
-'''
+
+```
