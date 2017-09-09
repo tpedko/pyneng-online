@@ -1,4 +1,4 @@
-git clone ssh://git@github.com/tpedko/pyneng-online-sep-oct-2017.git
+git clone ssh://git@github.com/tpedko/pyneng-online.git
 
 git pull
 git add . 
