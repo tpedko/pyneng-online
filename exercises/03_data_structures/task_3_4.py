@@ -14,3 +14,9 @@
 
 command1 = 'switchport trunk allowed vlan 1,3,10,20,30,100'
 command2 = 'switchport trunk allowed vlan 1,3,100,200,300'
+list1 = command1.split()[-1].split(',')
+list2 = command2.split()[-1].split(',')
+result1 = [int(s) for s in list1 ]
+result2 = [int(s) for s in list2 ]
+result3 = list(set(result1).intersection(set(result2)))
+print(result3)
