@@ -9,3 +9,4 @@
 '''
 
 MAC = 'AAAA:BBBB:CCCC'
+print(' '.join('{:08b}'.format(int(x,16)) for x in MAC.replace(':','')))
