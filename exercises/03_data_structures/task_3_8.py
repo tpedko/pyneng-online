@@ -19,3 +19,5 @@
 '''
 
 IP = '192.168.3.1'
+print(''.join('{:<10}'.format(x) for x in IP.split('.')))
+print('  '.join('{:>08b}'.format(int(x)) for x in IP.split('.')))
