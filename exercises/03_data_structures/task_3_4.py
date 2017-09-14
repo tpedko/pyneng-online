@@ -20,3 +20,8 @@ result1 = [int(s) for s in list1 ]
 result2 = [int(s) for s in list2 ]
 result3 = list(set(result1).intersection(set(result2)))
 print(result3)
+
+'''
+or
+print(list(set(int(s) for s in command1.split()[-1].split(',')).intersection(set(int(s) for s in command2.split()[-1].split(',')))))
+'''
