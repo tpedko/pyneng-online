@@ -26,14 +26,6 @@ ip_mask = ip_mask.split('/')
 ip = ip_mask[0]
 mask = ip_mask[1]
 
-print(ip, mask)
-
-
-#print('\n' + '-' * 30)
-#print('interface {}'.format(interface))
-#print('\n'.join(access_template).format(vlan))
-
-
 print('Network:')
 print(''.join('{:<10}'.format(x) for x in ip.split('.')))
 print('  '.join('{:>08b}'.format(int(x)) for x in ip.split('.')))
