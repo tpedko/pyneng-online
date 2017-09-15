@@ -30,7 +30,8 @@ print('Network:')
 print(''.join('{:<10}'.format(x) for x in ip.split('.')))
 print('  '.join('{:>08b}'.format(int(x)) for x in ip.split('.')))
 print('\nMask:')
-print('/', mask, sep='')
+#print('/', mask, sep='')
+print('/{}'.format(mask))
 '''
 mask = ('1' * int('mask')+('0' * 32))[:32]
 '''
