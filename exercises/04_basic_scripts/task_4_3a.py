@@ -22,3 +22,18 @@ trunk_template = ['switchport trunk encapsulation dot1q',
                   'switchport mode trunk',
                   'switchport trunk allowed vlan {}']
 
+d_mode = dict(access='Enter VLAN number: ', trunk='Enter allowed VLANs: ')
+
+
+
+mode = input('Enter interface mode (access/trunk): ')
+inf = input('Enter interface type and number: ')
+
+vlan = input(d_mode[mode])
+
+d_access = dict.fromkeys(access_template)
+d_trunk = dict.fromkeys(trunk_template)
+d = dict(access=d_access, trunk=d_trunk)
+
+print('interface {}'.format(inf))
+print(' \n'.join(d[mode]).format(vlan))
